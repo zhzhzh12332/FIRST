@@ -1,0 +1,17 @@
+{
+  "name": "learning-wiki",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": ["learning", "wiki", "knowledge-base"],
+  "author": "",
+  "license": "MIT",
+  "description": "个人学习知识库",
+  "devDependencies": {
+    "vitepress": "^1.6.0"
+  }
+}

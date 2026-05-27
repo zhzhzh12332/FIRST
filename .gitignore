@@ -1,0 +1,17 @@
+node_modules/
+dist/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+.cache/
+.temp/
+*.log
+.DS_Store
+Thumbs.db
+
+# Unrelated files
+git-installer.exe
+git-portable.exe
+index.html
+claude-start.ps1
+claude.ps1
+.claude/
