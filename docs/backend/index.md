@@ -4,10 +4,12 @@
 
 ## 目录
 
-- [Node.js](./nodejs.md) — 事件循环、Express/Koa、Stream
-- [Python](./python.md) — FastAPI、Django、数据处理
-- [API 设计](./api-design.md) — RESTful、GraphQL、认证授权
-- [系统设计](./system-design.md) — 微服务、消息队列、缓存策略
+| 主题 | 核心内容 | 难度 |
+|------|---------|------|
+| [Node.js](./nodejs) | 事件循环、Express/Koa、Stream | ⭐⭐ |
+| [Python](./python) | FastAPI、Django、数据处理 | ⭐⭐ |
+| [API 设计](./api-design) | RESTful、GraphQL、认证授权 | ⭐⭐ |
+| [系统设计](./system-design) | 微服务、消息队列、缓存策略 | ⭐⭐⭐ |
 
 ## 学习路线建议
 
@@ -15,3 +17,11 @@
 2. 学会设计和实现 RESTful API
 3. 理解数据库设计与优化
 4. 学习分布式系统基础概念
+
+::: warning
+后端开发不仅仅是写 API，还需要理解安全、性能、可维护性等多个维度。
+:::
+
+---
+
+*持续更新中...*

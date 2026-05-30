@@ -17,18 +17,18 @@ hero:
 features:
   - icon: 💻
     title: 计算机基础
-    details: 数据结构、算法、操作系统、网络、数据库
+    details: 数据结构与算法 · 操作系统 · 计算机网络 · 数据库
     link: /cs/
   - icon: 🎨
     title: 前端开发
-    details: HTML/CSS、JavaScript、TypeScript、React、Vue 及工程化实践
+    details: HTML/CSS · JavaScript · TypeScript · React / Vue · 工程化
     link: /frontend/
   - icon: ⚙️
     title: 后端开发
-    details: Node.js、Python、API 设计、系统设计
+    details: Node.js · Python · API 设计 · 系统设计 · 微服务
     link: /backend/
   - icon: 📐
     title: 数学基础
-    details: 线性代数、概率统计、离散数学
+    details: 线性代数 · 概率统计 · 离散数学 · 机器学习数学
     link: /math/
 ---

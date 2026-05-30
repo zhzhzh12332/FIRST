@@ -3,9 +3,35 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   base: '/FIRST/',
   title: '学习知识库',
-  description: '个人学习记录与知识管理',
+  description: '个人学习记录与知识管理 — 数据结构、算法、前后端、数学',
   lang: 'zh-CN',
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+
+  lastUpdated: true,
+  cleanUrls: true,
+
+  head: [
+    ['link', { rel: 'icon', href: '/FIRST/favicon.ico' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: '学习知识库' }],
+    ['meta', { property: 'og:description', content: '个人学习记录与知识管理 — 数据结构、算法、前后端、数学' }],
+    ['meta', { name: 'theme-color', content: '#3e63dd' }],
+  ],
+
+  sitemap: {
+    hostname: 'https://zhzhzh12332.github.io/FIRST',
+  },
+
+  markdown: {
+    lineNumbers: true,
+    image: { lazyLoading: true },
+    container: {
+      tipLabel: '提示',
+      warningLabel: '注意',
+      dangerLabel: '警告',
+      infoLabel: '信息',
+      detailsLabel: '详情',
+    },
+  },
 
   themeConfig: {
     logo: '📚',
@@ -24,6 +50,7 @@ export default defineConfig({
       '/cs/': [
         {
           text: '计算机基础',
+          collapsed: false,
           items: [
             { text: '概览', link: '/cs/' },
             { text: '数据结构', link: '/cs/data-structures' },
@@ -37,6 +64,7 @@ export default defineConfig({
       '/frontend/': [
         {
           text: '前端开发',
+          collapsed: false,
           items: [
             { text: '概览', link: '/frontend/' },
             { text: 'HTML/CSS', link: '/frontend/html-css' },
@@ -51,6 +79,7 @@ export default defineConfig({
       '/backend/': [
         {
           text: '后端开发',
+          collapsed: false,
           items: [
             { text: '概览', link: '/backend/' },
             { text: 'Node.js', link: '/backend/nodejs' },
@@ -63,6 +92,7 @@ export default defineConfig({
       '/math/': [
         {
           text: '数学基础',
+          collapsed: false,
           items: [
             { text: '概览', link: '/math/' },
             { text: '线性代数', link: '/math/linear-algebra' },
@@ -74,6 +104,7 @@ export default defineConfig({
       '/notes/': [
         {
           text: '随手笔记',
+          collapsed: false,
           items: [
             { text: '概览', link: '/notes/' },
             { text: '好文收藏', link: '/notes/articles' },
@@ -82,6 +113,15 @@ export default defineConfig({
           ],
         },
       ],
+    },
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/zhzhzh12332/FIRST' },
+    ],
+
+    editLink: {
+      pattern: 'https://github.com/zhzhzh12332/FIRST/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页',
     },
 
     search: {
@@ -107,11 +147,11 @@ export default defineConfig({
 
     footer: {
       message: '持续学习，持续成长',
-      copyright: 'CC BY 4.0',
+      copyright: 'MIT License © 2024',
     },
 
     outline: {
-      level: [2, 3],
+      level: [2, 4],
       label: '本页目录',
     },
 
@@ -123,5 +163,11 @@ export default defineConfig({
     lastUpdated: {
       text: '最后更新',
     },
+
+    returnToTopLabel: '返回顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到亮色模式',
+    darkModeSwitchTitle: '切换到暗色模式',
   },
 })
